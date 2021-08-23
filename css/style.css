@@ -1,21 +1,31 @@
-* {
-    background: #000;
+.banner {
+    /* background: url('../img/fon.jpg') #E9EDEE no-repeat center bottom; */
+    background-image: url('../img/fon.jpg');
+    background-color: #E9EDEE;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
-a {
-    text-decoration: none;
-    color: red;
+.banner__title {
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 100%;
+    color: #00559D;
 }
 
-.header,
-.about  {
-    background: blue;
+.services__heading {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #00559D;
+    text-align: center;
 }
 
-.nav > li > a {
-    color: #000;
-}
-
-footer {
-    background: #00559D;
+.about__heading {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100%;
+    color: #005DAB;
+    margin: 0;
 }
