@@ -8,11 +8,16 @@ body {
     font-size: 16px;
     line-height: 21px;
     color: #2C3036;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: #2C3036;
+}
+
+img {
+    max-width: 100%;
 }
 
 .undoted {
@@ -38,8 +43,86 @@ a {
     max-width: 181px;
     display: block;
     text-align: center;
+    border: none;
+    cursor: pointer;
 }
+
+.button_secondary {
+    background: #95459A;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 0;
+}
+
+.nav {
+    margin: 0 auto 0 25px;
+}
+
+.nav__list {
+    display: flex;
+}
+.nav__link a {
+    margin-right: 15px;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.header__phone {
+    margin-right: 24px;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    color: #95459A;
+}
+
+
+/* MAP */
+
+.map__wrapper {
+    background: #008752;
+    max-width: 380px;
+    width: 100%;
+    padding: 34px 44px 43px;
+}
+
+/* FOOTER */
 
 .footer {
     background: #00559D;
+    padding: 50px 0;
+}
+
+.footer__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    margin-left: 16px;
 }

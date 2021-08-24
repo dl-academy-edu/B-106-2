@@ -4,6 +4,11 @@
     background-color: #E9EDEE;
     background-repeat: no-repeat;
     background-position: center bottom;
+    margin-bottom: 80px;
+}
+
+.banner .container {
+    padding: 145px 0 286px;
 }
 
 .banner__title {
@@ -11,6 +16,15 @@
     font-size: 90px;
     line-height: 100%;
     color: #00559D;
+    max-width: 70%;
+    margin: 0;
+
+}
+
+/* SERVICES */
+
+.services {
+    margin-bottom: 110px;
 }
 
 .services__heading {
@@ -20,6 +34,24 @@
     text-transform: uppercase;
     color: #00559D;
     text-align: center;
+    margin: 0 0 50px;
+}
+
+.services__list {
+    display: flex;
+    margin: 0 -10px;    
+}
+
+.services__item {
+    max-width: 280px;
+    margin: 10px;
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    justify-content: space-between;
 }
 
 .about__heading {
@@ -28,4 +60,8 @@
     line-height: 100%;
     color: #005DAB;
     margin: 0;
+}
+
+.about__wrapper {
+    max-width: 40%;
 }
