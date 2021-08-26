@@ -1,0 +1,14 @@
+.contact__heading {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 97.2%;
+    text-align: center;
+    color: #00559D;
+}
+
+.contact__form {
+    max-width: 780px;
+    background: #EEEEEE;
+    padding: 50px 100px;
+    margin: 0 auto;
+}

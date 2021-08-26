@@ -46,6 +46,12 @@ img {
     border: none;
     cursor: pointer;
 }
+.button:hover {
+    background: #26CD8B;
+} 
+.button:active {
+    background: #005232;
+} 
 
 .button_secondary {
     background: #95459A;
@@ -56,6 +62,129 @@ img {
     margin: 0 auto;
 }
 
+fieldset {
+    border: none;
+}
+
+input {
+    height: 50px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #FFB612;
+}
+
+/* input:focus+label {
+    color: #FFB612;
+} */
+
+input::placeholder {
+    color: red;
+}
+
+label {
+    font-size: 18px;
+    line-height: 22px;
+    color: #6B6A6A;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    border: 2px solid #777;
+    background: transparent;
+    padding: 12px 20px;
+}
+
+.field_2_column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field_2_column .label-wrapper:nth-child(1) {
+    padding-right: 20px;
+}
+
+.label-wrapper {
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
+    width: 100%;
+}
+
+.label-wrapper:focus-within label {
+    color: #FFB612;
+}
+
+.checkbox-input,
+.radio-input {
+    display: none;
+}
+
+.checkbox-list,
+.radio-list {
+    display: flex;
+}
+
+.checkbox-label,
+.radio-label {
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6B6A6A;
+    cursor: pointer;
+    padding-left: 30px;
+    margin-right: 33px;
+}
+
+.checkbox-label:before,
+.checkbox-label:after,
+.radio-label:before,
+.radio-label:after {
+    content:'';
+    display: block;
+    position: absolute;
+}
+
+.checkbox-label:before,
+.radio-label:before {
+    top: -2px;
+    left: 0;
+    border: 2px solid #777;
+    width: 19px;
+    height: 19px;
+    background: transparent;
+}
+
+.radio-label:before {
+    border-radius: 50%;
+}
+
+.checkbox-label:after,
+.radio-label:after {
+    top: 3px;
+    left: 5px;
+    width: 13px;
+    height: 13px;
+    background: #95459A;
+    opacity: 0;
+}
+
+.radio-label:after {
+    border-radius: 50%;
+}
+
+
+.checkbox-input:checked+.checkbox-label:after,
+.radio-input:checked+.radio-label:after {
+    opacity: 1;
+}
+
+.checkbox-input:disabled+.checkbox-label,
+.radio-input:disabled+.radio-label {
+    opacity: .6;
+}
 
 /* HEADER */
 
