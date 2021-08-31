@@ -18,7 +18,14 @@
     color: #00559D;
     max-width: 70%;
     margin: 0;
+    margin-bottom: 47px;
+}
 
+.banner__button {
+    max-width: 360px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 /* SERVICES */
@@ -47,12 +54,33 @@
     margin: 10px;
 }
 
+.services__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2C3036;
+    margin: 20px 0;
+}
+
 /* ABOUT */
 
 .about {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
+/* .about:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    max-width: 570px;
+    max-height: 499px;
+    width: 100%;
+    height: 100%;
+    background: #008752;
+} */
 
 .about__heading {
     font-weight: 900;
@@ -64,4 +92,44 @@
 
 .about__wrapper {
     max-width: 40%;
+}
+
+.about__img {
+    box-shadow: 51px 71px 0px #008752;
+}
+
+
+
+/* AWARDS */
+
+.awards {
+    margin: 80px auto;
+}
+
+.awards__list {
+    -moz-display:flex;
+        -webkit-display:flex;
+            display: flex;
+    justify-content: space-between;
+}
+
+/* POPUP */
+
+.popup__wrapper {
+    position: relative;
+    width: 680px;
+    background: #EEEEEE;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup__close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: none;
 }

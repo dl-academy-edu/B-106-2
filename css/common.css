@@ -56,6 +56,12 @@ img {
 .button_secondary {
     background: #95459A;
 }
+.button_secondary:hover {
+    background: #D665DD;
+} 
+.button_secondary:active {
+    background: #722A77;
+} 
 
 .container {
     max-width: 1180px;
@@ -220,12 +226,38 @@ textarea {
 
 
 /* MAP */
-
+.map {
+    position: relative;
+    padding: 57px 0 125px;
+}
 .map__wrapper {
+    position: relative;
     background: #008752;
     max-width: 380px;
     width: 100%;
     padding: 34px 44px 43px;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.map__heading {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 23px;
+}
+
+.map__phone {
+    margin-bottom: 23px;
+    color: #fff;
+    display: inline-block;
+}
+
+.map__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 /* FOOTER */
@@ -254,4 +286,12 @@ textarea {
 
 .social__item {
     margin-left: 16px;
+}
+
+.social__item:hover path {
+    fill: #60A7E3;
+    stroke: black;
+}
+.social__item:active path {
+    fill: #17354F;
 }
