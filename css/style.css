@@ -115,6 +115,21 @@
 
 /* POPUP */
 
+.popup {
+    background: rgba(149, 69, 154, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.popup_open {
+    display: block;
+}
+
 .popup__wrapper {
     position: relative;
     width: 680px;
